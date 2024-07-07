@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^uzbekistan\.html$ study-mbbs-in-uzbekistan.html [R=301,L]
+RewriteRule ^russia\.html$ study-mbbs-in-russia.html [R=301,L]
+RewriteRule ^about\.html$ about-study-mbbs-in-abroad.html [R=301,L]
+RewriteRule ^nepal\.html$ study-mbbs-in-nepal.html [R=301,L]

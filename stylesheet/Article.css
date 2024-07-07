@@ -1,0 +1,234 @@
+  
+  /* First Article Start */
+   /* Marquee */
+   .marquee-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+#responsive-marquee-desktop { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #02145a;
+    animation: marqueeScroll 15s linear infinite;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  .article-one {
+    background-color: #f8f9fa; /* Optional: Change the background color */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#article-h3 {
+    color: #02145a; /* Optional: Change the heading color */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Optional: Change the text color */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+  /* First Article End */
+  
+  
+  .top-medical-college {
+    width: 90%;
+    margin: auto;
+    background-color: #f8f9fa; /* Add your preferred background color */
+    padding: 20px; /* Adjust padding for better spacing */
+}
+
+.top-medical-college h4 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  color: rgb(2, 20, 90);
+  font-size: 2em; /* Adjust font size */
+}
+
+/* Second Article Start */
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  width: 100%; /* Ensure full container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.top-medical-college a {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 22px;
+  display: block; /* Make the whole area clickable */
+  background-color: rgba(0,0,0,0.5); /* Optional: add a background color to make text easier to read */
+  color: white; /* Adjust text color for better visibility */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 0 0 10px 10px; /* Match container's bottom border radius */
+}
+
+.image-container:hover img {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(1.2) contrast(1.2) saturate(1.2);
+}
+
+.top-colleges-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; /* Ensure span covers the full width at the bottom */
+  text-align: center; /* Center-align the text */
+}
+
+  /* Second Article End */
+
+  /* card detail start */
+  
+  /*country css */
+  
+  /* on read more */
+  .more-content{
+    display: none;
+  }
+  .read-more-btn{
+    background-color: white;
+    color:black;
+    padding: 0.4vw 0.6vw;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+    }
+    .read-more-btn:hover {
+      background-color:rgb(2, 20, 90);
+      color: rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+    
+    .read-more-btn:active {
+      transform: translateY(2px); /* Slight push effect when clicked */
+  
+  }
+
+  /* animation card part */
+  .card {
+    position: relative;
+  }
+  
+  .card:hover .overlay {
+    opacity: 2;
+  }
+
+  /* About Page */
+  .container .accordion {
+    /* Your styles here */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.accordion-item {
+  /* Your styles here */
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+}
+.accordion-header {
+  /* Your styles here */
+  background-color:rgb(2, 20, 90);
+  color: white;
+}
+.accordion-button {
+  /* Styles for all states */
+  font-weight: bold;
+  color: #fff
+}
+
+.accordion-button:not(.collapsed) {
+  /* Specific style for expanded state */
+  background-color:rgb(2, 20, 90);
+  color: black;
+}
+
+.accordion-button.collapsed {
+  /* Specific style for collapsed state */
+  background-color:white;
+  color:rgb(2, 20, 90);
+}
+.accordion-body {
+  /* Your styles here */
+  font-size: 14px;
+  color:black;
+}
+#collapseOne .accordion-body {
+  /* Styles for first accordion item */
+  background-color: #e7f1ff;
+}
+
+/* Alternatively, using nth-child */
+.accordion-item:nth-child(1) .accordion-body {
+  background-color: #e7f1ff;
+}
+.accordion-body code {
+  /* Your styles here */
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+/* service page */
+.service-card{
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+/* Contact Page */
+/* .contact-banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+.contact-banner-text h1{
+  color:rgb(2, 20, 90);
+  font-size: 45px;
+
+} */

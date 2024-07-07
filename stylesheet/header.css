@@ -1,0 +1,136 @@
+/* Home header banner  */
+.header-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/Images/carousel/8504.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  animation: animate 12s ease-in-out infinite;
+  z-index: 0;
+}
+
+.header-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+}
+
+@keyframes animate {
+  0%, 100% {
+      background-image: url('/Images/carousel/8504.jpg');
+  }
+  25% {
+      background-image: url('/Images/carousel/home-main-banner-2.jpg');
+  }
+  50% {
+      background-image: url('/Images/carousel/home-main-banner-3.jpg');
+  }
+  75% {
+      background-image: url('/Images/carousel/home-main-banner-4.jpg');
+  }
+}
+
+.header-image span {
+  position: relative;
+  left: 5%;
+  top: 35%;
+  font-family: poppins;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  color:goldenrod;
+  text-align: center;
+  z-index: 2; /* Ensure the text appears above the overlay */
+}
+
+.header-image span:hover {
+  color: white;
+  transition: 0.5s;
+  font-size: 46px;
+}
+
+/* Country banner */
+  /* Kazakhstan css part start */
+  
+  /* kazakhstan header banner */
+
+.about-header-image {
+  width: 100%;
+  height: 850px;
+  background-image: url('/Images/carousel/about-blackboard.jpg');
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+.about-girl img {
+position: absolute;
+width: 900px;
+top: 250px;
+left: 60px;
+animation: slideIn 2s ease forwards;
+}
+.about-hide{
+  display: none;
+}
+@keyframes slideIn {
+0% {
+  left: 60px;
+  opacity: 0;
+}
+100% {
+  left: -199px;
+  opacity: 1;
+}
+
+}
+/* carousel image */
+.carousel-inner{
+
+  height: 100vh;
+}
+
+.carousel-item::before{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:rgb(2, 20, 90);
+  opacity: 0.6;
+  height: 100vh;
+}
+.overlay-hide::before{
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:white;
+  opacity: 0.6;
+  z-index:-1;
+
+}
+/* carousel image */
+.carousel-inner img{
+  object-fit: cover;
+}

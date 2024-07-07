@@ -1,0 +1,15 @@
+/* CSS for all devices */
+@media screen {
+    /* General CSS rules for all devices */
+  }
+  
+  /* CSS for devices with a maximum width of 768 pixels */
+  @media screen and (max-width: 768px) {
+    /* Specific CSS rules for smaller screens */
+  }
+  
+  /* CSS for devices with a minimum width of 768 pixels */
+  @media screen and (min-width: 768px) {
+    /* Specific CSS rules for larger screens */
+  }
+  

@@ -1,0 +1,80 @@
+:root {
+  --footer-background-color: rgb(2, 20, 90);
+  --footer-text-color: white;
+  --footer-hover-color: #000000;
+  --icon-color: rgb(32, 54, 139);
+  --footer-border-color: #ddd; /* Light grey border for buttons */
+}
+
+/* General Footer Styles */
+#footer {
+  background-color:var(--footer-background-color); /* Dark background for contrast */
+  color: #ffffff; /* White text color */
+  font-family: 'Poppins', sans-serif;
+}
+
+#footer h3 {
+  font-weight: 500;
+}
+
+#footer .container {
+  margin: auto;
+}
+
+#footer .footer-list {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+}
+
+#footer .footer-list li a {
+  color: #d1d1d1; /* Light grey for readability */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#footer .footer-list li a:hover,
+#footer .footer-list li a:focus {
+  color: var(--footer-background-color); /* White color on hover/focus */
+}
+
+#footer .footer-list li i {
+  margin-right: 8px; /* Space out icons from text */
+}
+
+#footer img.img-fluid {
+  margin-bottom: 15px; /* Space below the lines/images */
+}
+
+/* Social Icons & Address Enhancements */
+.footer-list li.address1 a, 
+.footer-list li a {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.social-links ul, 
+.address ul {
+  padding-left: 0; /* Ensure no padding is applied */
+}
+
+.social-links li a i,
+.address li a i {
+  background-color:var(--secondryColor); /* White background for icons */
+  color:var(--charlie); /* Dark text color for contrast */
+  border-radius: 5px; /* Circular icons */
+  border: 2px solid var(--charlie);
+  margin: 5px 5px;
+  padding: 5px 5px; /* Padding inside icons */
+  font-size: 16px; /* Icon size */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links li a:hover i,
+.address li a:hover i {
+  background-color:var(--charlie); /* Slightly off-white on hover */
+  color: #343a40; /* Maintain dark text color */
+  box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+}
+#copy-right{
+  padding: 12px 12px;
+}

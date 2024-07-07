@@ -1,0 +1,180 @@
+
+  /* top nav bar */
+  .top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:white;
+    position: fixed;
+    z-index: 999;
+    
+  } 
+  
+  .top-nav>ul>li>a {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(2, 20, 90);
+    text-decoration: none;
+  }
+  .top-nav .contact-info{
+    margin-bottom: 16px;
+  }
+
+
+
+  /* main nav bar */
+  .main-nav {
+    width: 100%;
+    padding: 0.5vw 1vw;
+    font-family: 'Arial', sans-serif;
+    margin-top:50px;
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .logo-holder{
+    padding: 12px 32px;
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    z-index: 0;
+  }
+  .logo-holder img{
+    width:150;
+    height:70px;
+  }
+  .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 1vw;
+    float: right;
+  }
+  
+  ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  ul li a {
+    display: block;
+    color:rgb(2, 20, 90);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    
+  }
+  
+  ul li a:hover {
+    background-color:white;
+    color: rgb(2, 20, 90);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Dropdown styles */
+  ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(2, 20, 90);
+    color: white;
+  }
+  ul ul a{
+    color: white;
+  }
+  
+  ul ul li {
+    display: block;
+  }
+  
+  ul li:hover>ul {
+    display: block;
+  }
+  
+  /* Style for nested dropdowns */
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  
+  /* Style for the top-level dropdown */
+  ul ul a {
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+  
+  /* Add a subtle box shadow to the dropdown for depth */
+  ul ul {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+/* Desktop Navbar End */
+
+/* mobile nav  */
+ .mobile-nav{
+    display: none;
+  }
+
+.navbar-brand img{
+  width: 202px;
+}
+  .main-nav {
+    width: 100%;
+    padding: 0.5vw 1vw;
+    font-family: 'Arial', sans-serif;
+    margin-top:50px;
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  /* Dropdown styles */
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(2, 20, 90);
+    color: white;
+  }
+  ul ul a{
+    color: white;
+  }
+  
+  ul ul li {
+    display: block;
+  }
+  
+  ul li:hover>ul {
+    display: block;
+  }
+  
+/* Desktop Navbar End */
+.navbar{
+  z-index: 999;
+}
+.navbar-brand img{
+  width: 202px;
+  margin-left: 12px;
+}
+.nav-item-link a.active:hover{
+  color:white;
+}
+.nav-item-link a:hover{
+  padding: 1rem;
+  background-color: rgb(2, 20, 90);
+  color: white;
+  transition: 0.5s ease;
+}
+
+.nav-item-link .medical-collage-white:hover{
+  color:white;
+}

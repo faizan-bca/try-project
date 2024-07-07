@@ -1,0 +1,376 @@
+@media screen and (max-width:500px) {
+  /* index page  */
+  /* navbar */
+  .mobile-nav{
+    display: block;
+  }
+  .main-nav{
+    display: none;
+  }
+  .top-nav{
+    display: none;
+  }
+.top-nav {
+    flex-direction: column;
+}
+.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0.5rem;
+}
+.main-nav {
+    flex-direction: column;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0.5rem;
+}
+.mobile-nav {
+    display: block;
+}
+
+.main-nav {
+    display: none;
+}
+
+.top-nav {
+    display: none;
+}
+  /* navbar end */
+  /*  header image start*/
+  .header-image {
+    height: 100vh; /* Adjust height for smaller screens */
+}
+
+.header-image span {
+    font-size: 19px; /* Adjust font size for smaller screens */
+}
+  /*  header image end*/
+
+    /*first article start*/
+    .responsive-marquee h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 15px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+  }
+    .article-one {
+      background-color:#f8f9fa; /* Optional: Change the background color */
+    
+  }
+  .criteria{
+    padding: 12px 12px;
+  }
+  .criteria h3{
+    font-size: 22px;
+  }
+  .criteria p{
+    width: 85%;
+    padding: 12px 12px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 17px;
+  }
+  /* first article end */
+  /* index page end */
+   /* about page start */
+   .about-header-image{
+    height: 500px;
+  }
+  .about-girl img {
+   display: none;
+  }
+  .about-hide{
+    display: block;
+    margin-left: -100px;
+    color:goldenrod;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+  .about-hide:hover{
+    font-size: 17px;
+    color: white;
+  }
+  .about-header-image {
+    height: 500px; /* Adjust height for smaller screens */
+}
+
+.about-girl img {
+    width: 80%; /* Adjust width for smaller screens */
+    top: 100px; /* Adjust position for smaller screens */
+    left: 10px; /* Adjust position for smaller screens */
+}
+
+.about-hide {
+    display: block; /* Ensure content is visible on smaller screens */
+}
+  /* about page end */
+  .carousel-item {
+    height: 50vh; /* Adjust height for smaller screens */
+}
+
+  .carousel-inner img{
+    height: 100vh;
+
+  }
+  .carousel-item::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgb(2, 20, 90);
+    opacity: 0;
+}
+}
+@media screen and (min-width:500px){
+  .carousel-item {
+    height: 100vh; /* Adjust height for smaller screens */
+}
+
+  .carousel-inner img{
+    height:100vh;
+
+  }
+ 
+}
+
+
+/* dummy */
+
+@media screen and (max-width: 1157px) {
+  /* index page  */
+  /* navbar */
+  .mobile-nav{
+    display: block;
+  }
+  .main-nav{
+    display: none;
+  }
+  .top-nav{
+    display: none;
+  }
+.top-nav {
+    flex-direction: column;
+}
+.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0.5rem;
+}
+.main-nav {
+    flex-direction: column;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0.5rem;
+}
+.mobile-nav {
+    display: block;
+}
+
+.main-nav {
+    display: none;
+}
+
+.top-nav {
+    display: none;
+}
+  /* navbar end */
+ 
+    
+        /* Second Article Start */
+    .image-top-medical-colleges .col-md-3 {
+        flex: 1 1 100%; /* Make each image container take full width */
+        max-width: 100%; /* Prevent it from exceeding the screen size */
+        margin-bottom: 20px; /* Add some space between the items */
+    }
+
+    .top-medical-college h4 {
+        font-size: 18px; /* Adjust heading size to be slightly smaller */
+        text-align: center; /* Center-align the heading for better focus */
+        margin-bottom: 5px; /* Add some space below the heading */
+    }
+
+    .top-colleges-tag a {
+        font-size: 14px; /* Make the font size smaller to fit nicely */
+        padding: 0; /* Reduce padding to save space */
+    }
+
+    .image-container img {
+        /* Optionally, adjust the hover effect to be less pronounced on small screens */
+        transition: transform 0.3s ease; /* Smoother transition without rotation */
+    }
+
+    .image-container:hover img {
+        transform: scale(1.05); /* Subtle zoom effect on hover */
+        filter: brightness(1.1) contrast(1.1) saturate(1.1); /* Slightly less intense filter effect */
+    }
+    /* Second Article End */
+    
+    }
+
+ /* For screen sizes between 767px and 1156px */
+@media screen and (min-width: 767px) and (max-width: 1156px) {
+    .image-top-medical-colleges .col-md-3 {
+        flex: 0 0 50%; /* Make each image container take half of the width */
+        max-width: 50%; /* Prevent it from exceeding the screen size */
+        margin-bottom: 15px; /* Add some space between the items */
+    }
+
+    .image-top-medical-colleges .col-md-3:nth-child(odd) {
+        clear: both; /* Clear the float for odd columns to start a new row */
+    }
+
+    .top-medical-college h4 {
+        font-size: 16px; /* Adjust heading size to be slightly smaller */
+        text-align: center; /* Center-align the heading for better focus */
+        margin-bottom: 10px; /* Add some space below the heading */
+    }
+
+    .top-colleges-tag a {
+        font-size: 12px; /* Make the font size smaller to fit nicely */
+        padding: 6px 10px; /* Reduce padding to save space */
+    }
+
+    .image-container img {
+        /* Optionally, adjust the hover effect to be less pronounced on small screens */
+        transition: transform 0.3s ease; /* Smoother transition without rotation */
+    }
+
+    .image-container:hover img {
+        transform: scale(1.03); /* Slightly smaller zoom effect on hover */
+        filter: brightness(1.05) contrast(1.05) saturate(1.05); /* Slightly less intense filter effect */
+    }
+    /* about */
+    .about-girl{
+      display: block;
+    }
+}
+
+
+      /* about girl hide */
+      @media screen and (max-width:900px) {
+        .about-girl img{
+          display:none;
+        }
+        .about-hide{
+          display: block;
+          margin-left: -100px;
+          color:goldenrod;
+          font-size: 53px;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: 400;
+        }
+        .about-hide:hover{
+          font-size: 75px;
+          color: white;
+        }
+      }
+      
+      @media screen and (max-width:500px) {
+        /* header */
+       /* Home header banner */
+
+
+  /* Country banner */
+  /* Kazakhstan css part start */
+
+  /* Kazakhstan header banner */
+
+  .carousel-caption {
+      bottom: 100px; /* Adjust position for smaller screens */
+      padding-left: 50px; /* Adjust padding for smaller screens */
+      padding-right: 50px; /* Adjust padding for smaller screens */
+  }
+
+  .carousel-caption h5 {
+      font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .carousel-caption p {
+      font-size: 18px; /* Adjust font size for smaller screens */
+  }
+/* Home Article */
+
+
+#article-h3 {
+  font-size: 20px; /* Adjust font size for smaller screens */
+}
+
+p {
+  font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.top-medical-college h4 {
+  font-size: 1.5em; /* Adjust font size for smaller screens */
+}
+
+.top-medical-college a {
+  font-size: 12px; /* Adjust font size for smaller screens */
+}
+ 
+    /* Second Article Start */
+    .image-top-medical-colleges .col-md-3 {
+        flex: 0 0 100%; /* Make each image container take full width */
+        max-width: 100%; /* Prevent it from exceeding the screen size */
+        margin-bottom: 20px; /* Add some space between the items */
+    }
+
+    .top-medical-college h4 {
+        font-size: 18px; /* Adjust heading size to be slightly smaller */
+        text-align: center; /* Center-align the heading for better focus */
+        margin-bottom: 15px; /* Add some space below the heading */
+    }
+
+    .top-colleges-tag a {
+        font-size: 14px; /* Make the font size smaller to fit nicely */
+        padding: 8px; /* Reduce padding to save space */
+    }
+
+    .image-container img {
+        /* Optionally, adjust the hover effect to be less pronounced on small screens */
+        transition: transform 0.3s ease; /* Smoother transition without rotation */
+    }
+
+    .image-container:hover img {
+        transform: scale(1.05); /* Subtle zoom effect on hover */
+        filter: brightness(1.1) contrast(1.1) saturate(1.1); /* Slightly less intense filter effect */
+    }
+     
+      }
+
+      @media screen and (min-width:150px) {
+        .header-image{
+          height: 85vh;
+        }
+        .carousel-item{
+          height: 20vh;
+          min-height:60vh;
+          -webkit-background-size:cover;
+          background-size: cover;
+      }      
+      }

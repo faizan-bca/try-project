@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: https://eduhawk.in/russia.html
+Disallow: https://eduhawk.in/nepal.html
+Disallow: https://eduhawk.in/about.html
+
+https://www.eduhawk.in/sitemap.xml
